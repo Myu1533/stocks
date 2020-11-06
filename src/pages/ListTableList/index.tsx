@@ -68,7 +68,7 @@ const TableList: React.FC<{}> = () => {
         actionRef={actionRef}
         rowKey="key"
         search={{
-          labelWidth: 120,
+          filterType: 'light',
         }}
         request={(params, sorter, filter) => queryRule({ ...params, sorter, filter })}
         postData={(data) => handleData(data)}
